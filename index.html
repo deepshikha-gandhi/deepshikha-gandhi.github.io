@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <meta name="description" content="Platform & DevOps Lead Architect — portfolio, achievements and career milestones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" id="brand"></a>
+      <nav>
+        <a href="#achievements">Achievements</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow mono" id="heroTitle"></p>
+      <h1 id="heroName"></h1>
+      <p class="lede" id="heroTagline"></p>
+      <p class="availability" id="heroAvailability"></p>
+      <div class="cta" id="heroLinks"></div>
+    </section>
+
+    <section class="wrap stats" id="stats"></section>
+
+    <section class="wrap section" id="about">
+      <h2>About</h2>
+      <div class="prose" id="aboutBody"></div>
+    </section>
+
+    <section class="wrap section" id="achievements">
+      <div class="section-head">
+        <h2>Achievements &amp; milestones</h2>
+        <div class="filters" id="filters" role="group" aria-label="Filter achievements"></div>
+      </div>
+      <ol class="timeline" id="achievementList"></ol>
+    </section>
+
+    <section class="wrap section" id="experience">
+      <h2>Experience</h2>
+      <div class="roles" id="experienceList"></div>
+    </section>
+
+    <section class="wrap section" id="expertise">
+      <h2>Expertise</h2>
+      <div class="grid" id="expertiseGrid"></div>
+    </section>
+
+    <section class="wrap section" id="certifications">
+      <h2>Education &amp; certifications</h2>
+      <ul class="plain-list" id="certList"></ul>
+    </section>
+
+    <section class="wrap section" id="writing">
+      <h2>Talks &amp; writing</h2>
+      <ul class="plain-list" id="writingList"></ul>
+    </section>
+
+    <section class="wrap section contact" id="contact">
+      <h2>Let's talk</h2>
+      <p class="lede">Want to talk platform strategy, developer experience or AI-assisted engineering? I'd like to hear from you.</p>
+      <div class="cta" id="contactLinks"></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span id="footerText"></span>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
