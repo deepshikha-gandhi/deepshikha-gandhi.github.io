@@ -22,6 +22,8 @@
   document.title = `${p.name} — ${p.title}`;
   $("brand").textContent = p.name;
   $("heroName").textContent = p.name;
+  $("heroPhoto").alt = `Photo of ${p.name}`;
+  $("heroPhoto").onerror = function () { this.remove(); }; // no photo.jpg → no broken image
   $("heroTitle").textContent = p.title;
   $("heroTagline").textContent = p.tagline;
   $("heroAvailability").textContent = p.availability || "";
